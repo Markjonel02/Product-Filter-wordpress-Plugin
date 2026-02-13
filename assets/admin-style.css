@@ -1,0 +1,356 @@
+/* Admin Styles for Product Filter Plugin */
+
+.pfp-admin-wrap {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.pfp-admin-container {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+/* Tabs */
+.pfp-tabs {
+    display: flex;
+    border-bottom: 1px solid #ccd0d4;
+    background: #f9f9f9;
+}
+
+.pfp-tab {
+    padding: 15px 25px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.pfp-tab:hover {
+    background: #fff;
+    color: #000;
+}
+
+.pfp-tab.active {
+    background: #fff;
+    color: #2271b1;
+    border-bottom-color: #2271b1;
+}
+
+/* Tab Content */
+.pfp-tab-content {
+    display: none;
+    padding: 30px;
+}
+
+.pfp-tab-content.active {
+    display: block;
+}
+
+/* Section */
+.pfp-section {
+    margin-bottom: 30px;
+}
+
+.pfp-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.pfp-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pfp-section-header h2 {
+    margin: 0;
+}
+
+/* Filters List */
+.pfp-filters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.pfp-no-filters {
+    padding: 40px;
+    text-align: center;
+    color: #666;
+    background: #f9f9f9;
+    border: 2px dashed #ccd0d4;
+    border-radius: 8px;
+}
+
+.pfp-filter-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ccd0d4;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.pfp-filter-item:hover {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pfp-filter-item.disabled {
+    opacity: 0.6;
+}
+
+.pfp-filter-drag {
+    cursor: move;
+    color: #999;
+}
+
+.pfp-filter-drag:hover {
+    color: #555;
+}
+
+.pfp-filter-info {
+    flex: 1;
+}
+
+.pfp-filter-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.pfp-filter-name strong {
+    font-size: 15px;
+}
+
+.pfp-filter-name code {
+    background: #e8e8e8;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #666;
+}
+
+.pfp-filter-meta {
+    font-size: 13px;
+    color: #666;
+}
+
+.pfp-filter-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.pfp-filter-actions .button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pfp-filter-actions .button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Modal */
+.pfp-modal {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.pfp-modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.pfp-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.pfp-modal-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.pfp-close {
+    color: #999;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.pfp-close:hover {
+    color: #000;
+}
+
+.pfp-modal-body {
+    padding: 25px;
+}
+
+.pfp-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px 25px;
+    border-top: 1px solid #ccd0d4;
+    background: #f9f9f9;
+}
+
+/* Form Elements */
+.pfp-form-group {
+    margin-bottom: 20px;
+}
+
+.pfp-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #23282d;
+}
+
+.pfp-form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 12px;
+}
+
+.pfp-input,
+.pfp-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pfp-input:focus,
+.pfp-textarea:focus {
+    border-color: #2271b1;
+    outline: none;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* Styling Grid */
+.pfp-styling-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.pfp-setting-group {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ccd0d4;
+    border-radius: 8px;
+}
+
+.pfp-setting-group h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #23282d;
+    border-bottom: 2px solid #2271b1;
+    padding-bottom: 10px;
+}
+
+.pfp-setting {
+    margin-bottom: 15px;
+}
+
+.pfp-setting:last-child {
+    margin-bottom: 0;
+}
+
+.pfp-setting label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+}
+
+.pfp-setting input[type="range"] {
+    width: 100%;
+}
+
+.pfp-setting input[type="color"] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Actions */
+.pfp-actions {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #ccd0d4;
+}
+
+/* Shortcode Box */
+.pfp-shortcode-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.pfp-shortcode-box code {
+    flex: 1;
+    font-size: 14px;
+    color: #d63638;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .pfp-filter-item {
+        flex-wrap: wrap;
+    }
+    
+    .pfp-filter-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .pfp-styling-grid {
+        grid-template-columns: 1fr;
+    }
+}
